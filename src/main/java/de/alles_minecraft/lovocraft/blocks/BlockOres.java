@@ -10,8 +10,12 @@ import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.Explosion;
+import net.minecraft.world.World;
 
 public class BlockOres extends BaseBlock{
 
@@ -26,6 +30,21 @@ public class BlockOres extends BaseBlock{
 	@Override
 	public int getMetaFromState(IBlockState state) {
 		return state.getValue(BlockOres.PROPERTY).getMeta();
+	}
+	
+	@Override
+	public float getBlockHardness(IBlockState state, World worldIn, BlockPos pos) {
+		return (int) state.getValue(BlockOres.PROPERTY).hardness;
+	}
+	
+	@Override
+	public float getExplosionResistance(World world, BlockPos pos, Entity exploder, Explosion explosion) {
+		return (int) world.getBlockState(pos).getValue(BlockOres.PROPERTY).resistance;
+	}
+	
+	@Override
+	public int getLightValue(IBlockState state) {
+		return (int) state.getValue(BlockOres.PROPERTY).light;
 	}
 	
 	@Override
