@@ -52,7 +52,7 @@ public class BlockLovoFurnace extends BaseBlock implements ITileEntityProvider{
 			playerIn.openGui(Lovocraft.MODID, 0, worldIn, pos.getX(),pos.getY(), pos.getZ());
 			return true;
 		}
-		return false;
+		return true;
 	}
 	@Override
 	public IBlockState onBlockPlaced(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ,
