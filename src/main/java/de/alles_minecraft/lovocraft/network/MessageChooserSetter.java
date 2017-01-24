@@ -25,9 +25,9 @@ public class MessageChooserSetter implements IMessage, IMessageHandler<MessageCh
 	@Override
 	public IMessage onMessage(MessageChooserSetter message, MessageContext ctx) {
 		TileEntity tile = ctx.getServerHandler().playerEntity.worldObj.getTileEntity(message.pos);
-		if(tile != null && tile instanceof ISidedInventory){
-			ISidedInventory inv = (ISidedInventory) tile;
-			inv.setField(message.id,message.state ? 1:0);
+		if(tile != null && tile instanceof INetworkChooseButttonProvider){
+			INetworkChooseButttonProvider inv = (INetworkChooseButttonProvider) tile;
+			inv.setValue(message.id,message.state);
 		}
 		return null;
 	}
@@ -35,17 +35,17 @@ public class MessageChooserSetter implements IMessage, IMessageHandler<MessageCh
 	@Override
 	public void fromBytes(ByteBuf buf) {
 		this.id = buf.readInt();
-		this.state = buf.readBoolean();
 		this.pos = new BlockPos(buf.readInt(), buf.readInt(), buf.readInt());
+		this.state = buf.readBoolean();
 	}
 
 	@Override
 	public void toBytes(ByteBuf buf) {
 		buf.writeInt(this.id);
-		buf.writeBoolean(this.state);
 		buf.writeInt(this.pos.getX());
 		buf.writeInt(this.pos.getY());
 		buf.writeInt(this.pos.getZ());
+		buf.writeBoolean(this.state);
 	}
 
 }

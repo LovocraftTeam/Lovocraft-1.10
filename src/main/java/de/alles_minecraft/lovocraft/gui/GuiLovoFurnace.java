@@ -28,6 +28,7 @@ public class GuiLovoFurnace extends GuiContainer implements INetworkChooseButton
 	public void initGui() {
 		super.initGui();
 		this.button = new GuiChooseButton(this.pos, 0,115, 12);
+		this.button.init();
 	}
 
 	@Override

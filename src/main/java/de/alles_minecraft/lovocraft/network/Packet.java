@@ -12,7 +12,7 @@ public class Packet{
 	public Packet() {
 		wrapper.registerMessage(MessageRequest.class, MessageRequest.class, 0, Side.SERVER);
 		wrapper.registerMessage(MessageCallback.class, MessageCallback.class, 1, Side.CLIENT);
-		wrapper.registerMessage(MessageChooserSetter.class, MessageChooserSetter.class, 0, Side.SERVER);
+		wrapper.registerMessage(MessageChooserSetter.class, MessageChooserSetter.class, 2, Side.SERVER);
 	}
 
 }

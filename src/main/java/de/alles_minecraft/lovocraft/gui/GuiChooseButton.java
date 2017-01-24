@@ -25,6 +25,9 @@ public class GuiChooseButton extends Gui {
 		this.x = x;
 		this.y = y;
 		this.tex = Minecraft.getMinecraft().getTextureManager();
+	}
+	
+	public void init(){
 		Lovocraft.INSTANCE.pack.wrapper.sendToServer(new MessageRequest(id, pos));
 	}
 	
@@ -49,8 +52,8 @@ public class GuiChooseButton extends Gui {
 	
 	public void setState(boolean b){
 		if(this.state != b){
-			this.animation = b ? 0:1;
 			this.state = b;
+			this.animation = b ? 0:1;
 			Lovocraft.INSTANCE.pack.wrapper.sendToServer(new MessageChooserSetter(this.id, b, this.pos));
 		}
 	}

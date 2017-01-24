@@ -2,16 +2,17 @@ package de.alles_minecraft.lovocraft.tileentity;
 
 import com.sun.org.apache.bcel.internal.generic.IINC;
 
+import de.alles_minecraft.lovocraft.network.INetworkChooseButttonProvider;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 
-public class TileEntityLovoFurnance extends TileEntity implements ISidedInventory{
+public class TileEntityLovoFurnance extends TileEntity implements ISidedInventory, INetworkChooseButttonProvider{
 	
 	private ItemStack[] stacks = new ItemStack[29];
-	private int state;
+	private boolean state;
 
 	@Override
 	public int getSizeInventory() {
@@ -71,24 +72,13 @@ public class TileEntityLovoFurnance extends TileEntity implements ISidedInventor
 	}
 
 	@Override
-	public int getField(int id) {
-		switch (id) {
-		case 0:
-			return this.state;
-		}
-		return 0;
-	}
+	public int getField(int id) {return 0;}
 
 	@Override
-	public void setField(int id, int value) {
-		switch (id) {
-		case 0:
-			this.state = value;
-		}
-	}
+	public void setField(int id, int value) {}
 
 	@Override
-	public int getFieldCount() {return 1;}
+	public int getFieldCount() {return 0;}
 
 	@Override
 	public void clear() {
@@ -121,6 +111,16 @@ public class TileEntityLovoFurnance extends TileEntity implements ISidedInventor
 	public boolean canExtractItem(int index, ItemStack stack, EnumFacing direction) {
 		// TODO SET UP SLOT LOGIC FOR HOPPER SUPPORT
 		return false;
+	}
+
+	@Override
+	public boolean getValue(int id) {
+		return this.state;
+	}
+
+	@Override
+	public void setValue(int id, boolean value) {
+		this.state = value;
 	}
 	
 }
