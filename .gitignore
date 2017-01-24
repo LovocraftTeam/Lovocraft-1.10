@@ -27,3 +27,6 @@ run
 /build.gradle
 /CREDITS-fml.txt
 /README.txt
+/options.txt
+/usercache.json
+/usernamecache.json

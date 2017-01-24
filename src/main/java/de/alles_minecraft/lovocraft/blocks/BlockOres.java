@@ -22,9 +22,10 @@ public class BlockOres extends BaseBlock{
 	public static final PropertyEnum<EnumLovoOres> PROPERTY = PropertyEnum.create("lovo_ore_enum", EnumLovoOres.class);
 	
 	public BlockOres() {
-		super(Material.GROUND);	
+		super(Material.ROCK);	
 		this.setUnlocalizedName("lovo_ores");
 		this.setSoundType(SoundType.STONE);
+		this.setHardness(3F);
 	}
 
 	@Override
