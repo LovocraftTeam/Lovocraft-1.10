@@ -1,0 +1,16 @@
+[
+{
+  "modid": "lovocraft",
+  "name": "LovoCraft",
+  "description": "Makes Minecraft more fiery",
+  "version": "0.0.1a",
+  "mcversion": "1.10",
+  "url": "http://www.alles-minecraft.de/",
+  "updateUrl": "",
+  "authorList": ["Tutadventures", "GalaxyHD", "MrTroble", "HyCraftHD"],
+  "credits": "",
+  "logoFile": "logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]

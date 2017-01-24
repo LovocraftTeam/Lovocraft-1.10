@@ -1,0 +1,51 @@
+tile.lovo_ore_nether.name=Höllen Lovo Erz
+tile.lovo_ore.name=Lovo Erz
+tile.lovo_iron.name=Lovo Eisen Erz
+tile.lovo_gold.name=Lovo Gold Erz
+tile.lovo_redstone.name=Lovo Redstone Erz
+tile.lovo_lapis.name=Lovo Lapis Lazuli Erz
+tile.lovo_emerald.name=Lovo Smaragd Erz
+tile.lovo_diamond.name=Lovo Diamanten Erz
+tile.lovo_coal.name=Lovo Kohle Erz
+
+tile.lovo_furnace.name=Lovo Ofen
+
+item.lovocrystal.name=Lovo Kristall
+item.lovocrystal_crumbled.name=Zerbröselter Lovo Kristall
+item.lovoiron.name=Lovoeisenbarren
+item.lovostick.name=Lovo Stock
+item.lovostring.name=Lovo Faden
+item.lovostaff.name=Lovo Stab
+item.livingfire.name=Lebendes Feuer
+item.sigilofthedarklord.name=Siegel des Dunklen Lords
+item.lovofurnaceupgrade.name=Lovo Ofen Verbesserung
+item.lovosword.name=Lovo Schwert
+item.lovoaxe.name=Lovo Axt
+item.lovopickaxe.name=Lovo Spitzhacke
+item.lovospade.name=Lovo Schaufel
+item.lovohoe.name=Lovo Sense
+
+item.lovohelmet.name=Lovo Helm
+item.lovochestplate.name=Lovo blabloiblu
+item.lovoleggings.name=Lovo Hose
+item.lovoboots.name=Lovo Schuhe
+
+tile.lovostone.name=Lovo Stein
+tile.lovocobblestone.name=Lovo Bruchstein
+tile.lovocobblestone_fired.name=Lovo Bruchstein (Kristall)
+tile.lovobrick.name=Lovo Ziegel
+tile.lovobrick_chiselled.name=Gemeißelter Lovo Ziegel
+tile.lovobrick_cracked.name=Rissiger Lovo Ziegel
+tile.lovoblock.name=Lovo Block
+tile.lovoErz_nether.name=Höllen Lovo Erz
+tile.lovoErz.name=Lovo Dimensions Erz
+tile.lovoportal.name=Lovo Portal
+tile.lovoportalframe.name=Lovo Portalstück 
+tile.lovoportalframe_empty.name=Leeres Lovo Portalstück 
+tile.lovoportalframe_crystal.name=Lovo Portalstück mit Kristall
+tile.lovofurnace.name=Lovo Ofen
+tile.lovotnt.name=Lovo TNT
+tile.effectblock.name=Effekt Block
+tile.chickenblock.name=Huhn Block
+
+itemGroup.LovoCraft=LovoCraft

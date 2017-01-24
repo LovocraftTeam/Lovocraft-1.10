@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "axis=z": { "model": "lovoportal_ew" },
+        "axis=x": { "model": "lovoportal_ns" }
+    }
+}

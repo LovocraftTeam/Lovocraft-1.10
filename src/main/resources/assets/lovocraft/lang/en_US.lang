@@ -1,0 +1,50 @@
+tile.lovo_ore_nether.name=Nether Lovo Ore
+tile.lovo_ore.name=Lovo Ore
+tile.lovo_iron.name=Lovo Iron Ore
+tile.lovo_gold.name=Lovo Gold Ore
+tile.lovo_redstone.name=Lovo Redstone Ore
+tile.lovo_lapis.name=Lovo Lapis Lazuli Ore
+tile.lovo_emerald.name=Lovo Emerald Ore
+tile.lovo_diamond.name=Lovo Diamond Ore
+tile.lovo_coal.name=Lovo Coal Ore
+
+tile.lovo_furnace.name=Lovo Furnance
+
+item.lovocrystal.name=Lovo Crystal
+item.lovocrystal_crumbled.name=Crumbled Lovo Crystal
+item.lovoiron.name=Lovo Iron Ingot
+item.lovostick.name=Lovo Stick
+item.lovostring.name=Lovo String
+item.lovostaff.name=Lovo Staff
+item.livingfire.name=Living Fire
+item.sigilofthedarklord.name=Sigil of the Dark Lord
+item.lovofurnaceupgrade.name=Lovo Furnace Upgrade
+item.lovosword.name=Lovo Sword
+item.lovoaxe.name=Lovo Axe
+item.lovopickaxe.name=Lovo Pickaxe
+item.lovospade.name=Lovo Shovel
+item.lovohoe.name=Lovo Hoe
+
+item.lovohelmet.name=Lovo Helmet
+item.lovochestplate.name=Lovo Chestplate
+item.lovoleggings.name=Lovo Leggings
+item.lovoboots.name=Lovo Boots
+
+tile.lovostone.name=Lovo Stone
+tile.lovocobblestone.name=Lovo Cobblestone
+tile.lovocobblestonefired.name=Lovo Cobblestone (Crystal)
+tile.lovobrick.name=Lovo Brick
+tile.lovobrickchiselled.name=Chiselled Lovo Brick
+tile.lovobrickcracked.name=Cracked Lovo Brick
+tile.lovoblock.name=Lovo Block
+tile.lovooredim.name=Lovo Dimension Ore
+tile.lovoportal.name=Lovo Portal
+tile.lovoportalframe.name=Lovo Portalframe
+tile.lovoportalframeempty.name=Empty Lovo Portalframe
+tile.lovoportalframecrystal.name=Lovo Portalframe with Crystal
+tile.lovofurnace.name=Lovo Furnace
+tile.lovotnt.name=Lovo TNT
+tile.effectblock.name=Effect Block
+tile.chickenblock.name=Chicken Block
+
+itemGroup.lovo_tab=LovoCraft

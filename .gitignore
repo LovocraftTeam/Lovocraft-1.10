@@ -1,0 +1,29 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+/forge-1.10-12.18.0.2000-1.10.0-changelog.txt
+/forge-1.10-12.18.0.2000-1.10.0-mdk (1).zip
+/gradlew
+/gradlew.bat
+/build.gradle
+/CREDITS-fml.txt
+/README.txt

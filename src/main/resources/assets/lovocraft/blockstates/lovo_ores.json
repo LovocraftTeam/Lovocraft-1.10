@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "lovo_ore_enum=lovo_coal": { "model": "lovocraft:lovo_coal" },
+        "lovo_ore_enum=lovo_diamond": { "model": "lovocraft:lovo_diamond" },
+        "lovo_ore_enum=lovo_emerald": { "model": "lovocraft:lovo_emerald" },
+        "lovo_ore_enum=lovo_gold": { "model": "lovocraft:lovo_gold" },
+        "lovo_ore_enum=lovo_iron": { "model": "lovocraft:lovo_iron" },
+        "lovo_ore_enum=lovo_lapis": { "model": "lovocraft:lovo_lapis" },
+        "lovo_ore_enum=lovo_ore": { "model": "lovocraft:lovo_ore" },
+        "lovo_ore_enum=lovo_ore_nether": { "model": "lovocraft:lovo_ore_nether" },
+        "lovo_ore_enum=lovo_redstone": { "model": "lovocraft:lovo_redstone" }
+    }
+}

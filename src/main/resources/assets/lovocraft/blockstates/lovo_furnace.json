@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "faces=east": { "model": "lovocraft:lovo_furnace", "y": 90},
+        "faces=west": { "model": "lovocraft:lovo_furnace", "y": -90},
+        "faces=north": { "model": "lovocraft:lovo_furnace", "y": 0},
+        "faces=down": { "model": "lovocraft:lovo_furnace", "y": 0},
+        "faces=up": { "model": "lovocraft:lovo_furnace", "y": 0},
+        "faces=south": { "model": "lovocraft:lovo_furnace", "y": 180}
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "lovopillar" },
+            { "model": "lovopillar_mirrored" },
+            { "model": "lovopillar", "y": 180 },
+            { "model": "lovopillar_mirrored", "y": 180 }
+        ]
+    }
+}
