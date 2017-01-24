@@ -25,7 +25,6 @@ public class BlockOres extends BaseBlock{
 		super(Material.ROCK);	
 		this.setUnlocalizedName("lovo_ores");
 		this.setSoundType(SoundType.STONE);
-		this.setHardness(3F);
 	}
 
 	@Override
@@ -46,6 +45,11 @@ public class BlockOres extends BaseBlock{
 	@Override
 	public int getLightValue(IBlockState state) {
 		return (int) state.getValue(BlockOres.PROPERTY).light;
+	}
+	@Override
+	public int getHarvestLevel(IBlockState state) {
+	
+		return (int) state.getValue(BlockOres.PROPERTY).harvestlevel;
 	}
 	
 	@Override

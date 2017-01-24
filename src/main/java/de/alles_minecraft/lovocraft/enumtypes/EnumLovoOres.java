@@ -4,24 +4,25 @@ import net.minecraft.util.IStringSerializable;
 
 public enum EnumLovoOres implements IStringSerializable {
 	
-	COAL("lovo_coal",0,0,0),
-	DIAMOND("lovo_diamond",0,0,0),
-	EMERALD("lovo_emerald",0,0,0),
-	GOLD("lovo_gold",0,0,0),
-	IRON("lovo_iron",0,0,0),
-	LAPIS("lovo_lapis",0,0,0),
-	REDSTONE("lovo_redstone",0,0,0),
-	LOVO_ORE("lovo_ore",0,0,0),
-	LOVO_ORE_NETHER("lovo_ore_nether",0,0,0);
+	COAL("lovo_coal",4,4,0,2),
+	DIAMOND("lovo_diamond",4,4,0,3),
+	EMERALD("lovo_emerald",4,4,0,3),
+	GOLD("lovo_gold",4,4,0,2),
+	IRON("lovo_iron",4,4,0,2),
+	LAPIS("lovo_lapis",4,4,0,2),
+	REDSTONE("lovo_redstone",4,4,6,2),
+	LOVO_ORE("lovo_ore",4,4,8,3),
+	LOVO_ORE_NETHER("lovo_ore_nether",4,4,8,3);
 	
 	private String st;
-	public final float hardness,resistance,light;
+	public final float hardness,resistance,light,harvestlevel;
 	
-	private EnumLovoOres(String st,float hardness,float resistance,float light) {
+	private EnumLovoOres(String st,float hardness,float resistance,float light,float harvestlevel) {
 		this.st = st;
 		this.hardness = hardness;
 		this.light = light;
 		this.resistance = resistance;
+		this.harvestlevel = harvestlevel;
 	}
 	
 	@Override
