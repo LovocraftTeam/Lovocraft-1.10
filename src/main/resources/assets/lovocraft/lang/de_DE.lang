@@ -8,7 +8,14 @@ tile.lovo_emerald.name=Lovo Smaragd Erz
 tile.lovo_diamond.name=Lovo Diamanten Erz
 tile.lovo_coal.name=Lovo Kohle Erz
 
+tile.lovo_brick.name=Lovo Ziegel
+tile.lovo_brick_chiselled.name=Gemeißelter Lovo Ziegel
+tile.lovo_brick_cracked.name=Rissiger Lovo Ziegel
+
 tile.lovo_furnace.name=Lovo Ofen
+
+
+
 
 item.lovocrystal.name=Lovo Kristall
 item.lovocrystal_crumbled.name=Zerbröselter Lovo Kristall
@@ -33,9 +40,6 @@ item.lovoboots.name=Lovo Schuhe
 tile.lovostone.name=Lovo Stein
 tile.lovocobblestone.name=Lovo Bruchstein
 tile.lovocobblestone_fired.name=Lovo Bruchstein (Kristall)
-tile.lovobrick.name=Lovo Ziegel
-tile.lovobrick_chiselled.name=Gemeißelter Lovo Ziegel
-tile.lovobrick_cracked.name=Rissiger Lovo Ziegel
 tile.lovoblock.name=Lovo Block
 tile.lovoErz_nether.name=Höllen Lovo Erz
 tile.lovoErz.name=Lovo Dimensions Erz

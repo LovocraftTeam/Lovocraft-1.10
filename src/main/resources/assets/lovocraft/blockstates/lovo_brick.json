@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "lovo_brick_enum=lovo_brick": { "model": "lovocraft:lovo_brick" },
+        "lovo_brick_enum=lovo_brick_chiselled": { "model": "lovocraft:lovo_brick_chiselled" },
+        "lovo_brick_enum=lovo_brick_cracked": { "model": "lovocraft:lovo_brick_cracked" }
+    }
+}

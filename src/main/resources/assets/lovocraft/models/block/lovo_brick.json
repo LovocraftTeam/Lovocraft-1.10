@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "lovocraft:blocks/lovobrickcracked"  
+        "all": "lovocraft:blocks/lovo_brick"  
     }
 }
