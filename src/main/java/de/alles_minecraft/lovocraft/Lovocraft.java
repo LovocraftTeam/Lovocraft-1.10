@@ -33,7 +33,7 @@ public class Lovocraft {
 	public CreativeTabs lovo_tab = new CreativeTabs("lovo_tab") {
 		@Override
 		public Item getTabIconItem() {
-			return Items.COOKIE;
+			return Item.getItemFromBlock(Lovocraft.INSTANCE.lblocks.blockore);
 		}
 	};
 	

@@ -19,6 +19,7 @@ import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
@@ -26,7 +27,8 @@ import net.minecraft.world.World;
 public class BlockLovoFurnace extends BaseBlock implements ITileEntityProvider{
 
 	public static final PropertyEnum<EnumFacing> FACINGS = PropertyEnum.create("faces", EnumFacing.class);
-	
+	protected static final AxisAlignedBB LOVO_FURNACE_AABB = new AxisAlignedBB(0.064D, 0.064D, 0.064D, 0.936D, 0.936D, 0.936D);
+	 
 	public BlockLovoFurnace() {
 		super(Material.IRON);
 		this.setSoundType(SoundType.METAL);
@@ -37,6 +39,11 @@ public class BlockLovoFurnace extends BaseBlock implements ITileEntityProvider{
         this.setDefaultState(this.blockState.getBaseState().withProperty(BlockLovoFurnace.FACINGS, EnumFacing.NORTH));
 	}
     
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+    {
+        return LOVO_FURNACE_AABB;
+    }
+	
 	@Override
 	public String getHarvestTool(IBlockState state) {
 		return "pickaxe";

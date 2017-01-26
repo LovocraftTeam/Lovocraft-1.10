@@ -2,8 +2,8 @@
 "parent": "block/cube_all",
 "__comment": "Designed by Tutadventures with BDcraft Cubik PRO 0.95 Beta - http://bdcraft.net",
 "textures": {
-    "particle": "lovocraft:blocks/lovocobblestone",
-    "texture": "lovocraft:blocks/lovofurnace"
+    "particle": "lovocraft:blocks/lovo_cobblestone",
+    "texture": "lovocraft:blocks/lovo_furnace"
 },
 "elements": [ 
 {

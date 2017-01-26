@@ -6,7 +6,7 @@
     "down": "blocks/tnt_bottom",
 	"up": "blocks/tnt_top",
 	"side": "blocks/tnt_side",
-    "crystal": "lovocraft/crystal"
+    "crystal": "lovocraft:blocks/crystal"
 },
 "elements": [ 
 {
