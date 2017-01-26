@@ -45,10 +45,6 @@ public class BlockBrick extends BaseBlock{
 	}
 	
 	@Override
-	public int getLightValue(IBlockState state) {
-		return (int) state.getValue(BlockBrick.PROPERTY).light;
-	}
-	@Override
 	public int getHarvestLevel(IBlockState state) {
 	
 		return (int) state.getValue(BlockBrick.PROPERTY).harvestlevel;

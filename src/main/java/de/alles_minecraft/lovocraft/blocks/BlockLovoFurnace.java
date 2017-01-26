@@ -31,10 +31,22 @@ public class BlockLovoFurnace extends BaseBlock implements ITileEntityProvider{
 		super(Material.IRON);
 		this.setSoundType(SoundType.METAL);
 		this.setUnlocalizedName("lovo_furnace");
+		this.setHardness(3F);
+		this.setResistance(10.0F);
 		this.isBlockContainer = true;
         this.setDefaultState(this.blockState.getBaseState().withProperty(BlockLovoFurnace.FACINGS, EnumFacing.NORTH));
 	}
-
+    
+	@Override
+	public String getHarvestTool(IBlockState state) {
+		return "pickaxe";
+	}
+	
+	@Override
+	public int getHarvestLevel(IBlockState state) {
+		return 1;
+	}
+	
 	@Override
 	public TileEntity createNewTileEntity(World worldIn, int meta) {
 		return new TileEntityLovoFurnance();

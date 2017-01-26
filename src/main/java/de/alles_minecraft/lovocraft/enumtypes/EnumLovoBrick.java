@@ -4,17 +4,16 @@ import net.minecraft.util.IStringSerializable;
 
 public enum EnumLovoBrick implements IStringSerializable {
 	
-	BRICK("lovo_brick",4,4,0,2),
-	CHISELLED("lovo_brick_chiselled",4,4,0,3),
-	CRACKED("lovo_brick_cracked",4,4,0,3);
+	BRICK("lovo_brick",4,4,2),
+	CHISELLED("lovo_brick_chiselled",4,4,3),
+	CRACKED("lovo_brick_cracked",4,4,3);
 	
 	private String st;
-	public final float hardness,resistance,light,harvestlevel;
+	public final float hardness,resistance,harvestlevel;
 	
-	private EnumLovoBrick(String st,float hardness,float resistance,float light,float harvestlevel) {
+	private EnumLovoBrick(String st,float hardness,float resistance,float harvestlevel) {
 		this.st = st;
 		this.hardness = hardness;
-		this.light = light;
 		this.resistance = resistance;
 		this.harvestlevel = harvestlevel;
 	}
