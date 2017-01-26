@@ -12,7 +12,9 @@ tile.lovo_brick.name=Lovo Brick
 tile.lovo_brick_chiselled.name=Chiselled Lovo Brick
 tile.lovo_brick_cracked.name=Cracked Lovo Brick
 
-tile.lovo_furnace.name=Lovo Furnance
+tile.lovo_stone.name=Lovo Stone
+
+tile.lovo_furnace.name=Lovo Furnace
 
 
 
@@ -37,7 +39,6 @@ item.lovochestplate.name=Lovo Chestplate
 item.lovoleggings.name=Lovo Leggings
 item.lovoboots.name=Lovo Boots
 
-tile.lovostone.name=Lovo Stone
 tile.lovocobblestone.name=Lovo Cobblestone
 tile.lovocobblestonefired.name=Lovo Cobblestone (Crystal)
 tile.lovoblock.name=Lovo Block

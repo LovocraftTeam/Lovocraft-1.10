@@ -12,6 +12,8 @@ tile.lovo_brick.name=Lovo Ziegel
 tile.lovo_brick_chiselled.name=Gemeiﬂelter Lovo Ziegel
 tile.lovo_brick_cracked.name=Rissiger Lovo Ziegel
 
+tile.lovo_stone.name=Lovo Stein
+
 tile.lovo_furnace.name=Lovo Ofen
 
 
@@ -37,7 +39,6 @@ item.lovochestplate.name=Lovo blabloiblu
 item.lovoleggings.name=Lovo Hose
 item.lovoboots.name=Lovo Schuhe
 
-tile.lovostone.name=Lovo Stein
 tile.lovocobblestone.name=Lovo Bruchstein
 tile.lovocobblestone_fired.name=Lovo Bruchstein (Kristall)
 tile.lovoblock.name=Lovo Block
