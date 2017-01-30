@@ -3,7 +3,7 @@ package de.alles_minecraft.lovocraft;
 import org.apache.logging.log4j.Logger;
 
 import de.alles_minecraft.lovocraft.network.Packet;
-import de.alles_minecraft.lovocraft.tileentity.TileEntityLovoFurnance;
+import de.alles_minecraft.lovocraft.tileentity.TileEntityLovoFurnace;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -33,7 +33,7 @@ public class Lovocraft {
 	public CreativeTabs lovo_tab = new CreativeTabs("lovo_tab") {
 		@Override
 		public Item getTabIconItem() {
-			return Item.getItemFromBlock(Lovocraft.INSTANCE.lblocks.blockore);
+			return Item.getItemFromBlock(Lovocraft.INSTANCE.lblocks.blocklovoore);
 		}
 	};
 	
@@ -57,7 +57,7 @@ public class Lovocraft {
 		
 		PROXY_INSTANCE.registerModels();
 		
-		TileEntity.addMapping(TileEntityLovoFurnance.class, "LovoFurnace");
+		TileEntity.addMapping(TileEntityLovoFurnace.class, "LovoFurnace");
 	}
 	
 	@EventHandler

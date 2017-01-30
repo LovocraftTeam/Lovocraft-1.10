@@ -1,7 +1,7 @@
 package de.alles_minecraft.lovocraft.blocks;
 
 import de.alles_minecraft.lovocraft.Lovocraft;
-import de.alles_minecraft.lovocraft.tileentity.TileEntityLovoFurnance;
+import de.alles_minecraft.lovocraft.tileentity.TileEntityLovoFurnace;
 import net.minecraft.block.BlockFurnace;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.SoundType;
@@ -56,7 +56,7 @@ public class BlockLovoFurnace extends BaseBlock implements ITileEntityProvider{
 	
 	@Override
 	public TileEntity createNewTileEntity(World worldIn, int meta) {
-		return new TileEntityLovoFurnance();
+		return new TileEntityLovoFurnace();
 	}
 
 	@Override

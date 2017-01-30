@@ -1,6 +1,6 @@
 {
     "parent": "block/block",
     "textures": {
-        "all": "lovocraft:blocks/lovoportalframe"  
+        "all": "lovocraft:blocks/lovo_portal_frame"  
     }
 }

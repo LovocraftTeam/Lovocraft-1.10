@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "lovo_portal_frame_enum=lovo_portal_frame": { "model": "lovocraft:lovo_portal_frame" },
+        "lovo_portal_frame_enum=lovo_portal_frame_empty": { "model": "lovocraft:lovo_portal_frame_empty" },
+        "lovo_portal_frame_enum=lovo_portal_frame_crystal": { "model": "lovocraft:lovo_portal_frame_crystal" }
+    }
+}

@@ -4,7 +4,7 @@ import java.util.Random;
 
 import de.alles_minecraft.lovocraft.LBlocks;
 import de.alles_minecraft.lovocraft.Lovocraft;
-import de.alles_minecraft.lovocraft.tileentity.TileEntityLovoFurnance;
+import de.alles_minecraft.lovocraft.tileentity.TileEntityLovoFurnace;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFurnace;
 import net.minecraft.block.BlockStone;

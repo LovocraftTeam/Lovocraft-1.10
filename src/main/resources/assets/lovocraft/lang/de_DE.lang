@@ -11,6 +11,9 @@ tile.lovo_coal.name=Lovo Kohle Erz
 tile.lovo_brick.name=Lovo Ziegel
 tile.lovo_brick_chiselled.name=Gemeißelter Lovo Ziegel
 tile.lovo_brick_cracked.name=Rissiger Lovo Ziegel
+tile.lovo_portal_frame.name=Lovo Portalstück 
+tile.lovo_portal_frame_empty.name=Leeres Lovo Portalstück 
+tile.lovo_portal_frame_crystal.name=Lovo Portalstück mit Kristall
 
 tile.lovo_stone.name=Lovo Stein
 tile.lovo_cobblestone.name=Lovo Bruchstein
@@ -45,10 +48,6 @@ item.lovoboots.name=Lovo Schuhe
 tile.lovocobblestone_fired.name=Lovo Bruchstein (Kristall)
 tile.lovoblock.name=Lovo Block
 tile.lovoportal.name=Lovo Portal
-tile.lovoportalframe.name=Lovo Portalstück 
-tile.lovoportalframe_empty.name=Leeres Lovo Portalstück 
-tile.lovoportalframe_crystal.name=Lovo Portalstück mit Kristall
-tile.lovofurnace.name=Lovo Ofen
 tile.effectblock.name=Effekt Block
 tile.chickenblock.name=Huhn Block
 

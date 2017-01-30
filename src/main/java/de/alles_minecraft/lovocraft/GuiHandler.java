@@ -2,7 +2,7 @@ package de.alles_minecraft.lovocraft;
 
 import de.alles_minecraft.lovocraft.container.ContainerLovoFurnace;
 import de.alles_minecraft.lovocraft.gui.GuiLovoFurnace;
-import de.alles_minecraft.lovocraft.tileentity.TileEntityLovoFurnance;
+import de.alles_minecraft.lovocraft.tileentity.TileEntityLovoFurnace;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
@@ -16,7 +16,7 @@ public class GuiHandler implements IGuiHandler{
 	@Override
 	public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
 		TileEntity ent = world.getTileEntity(new BlockPos(x, y, z));
-		if(ent instanceof TileEntityLovoFurnance){
+		if(ent instanceof TileEntityLovoFurnace){
 			return new ContainerLovoFurnace((IInventory) ent,player.inventory);
 		}
 		return null;
@@ -25,7 +25,7 @@ public class GuiHandler implements IGuiHandler{
 	@Override
 	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
 		TileEntity ent = world.getTileEntity(new BlockPos(x, y, z));
-		if(ent instanceof TileEntityLovoFurnance){
+		if(ent instanceof TileEntityLovoFurnace){
 			return new GuiLovoFurnace((IInventory) ent,player.inventory);
 		}
 		return null;

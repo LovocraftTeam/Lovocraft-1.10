@@ -2,16 +2,16 @@ package de.alles_minecraft.lovocraft.enumtypes;
 
 import net.minecraft.util.IStringSerializable;
 
-public enum EnumLovoBrick implements IStringSerializable {
+public enum EnumLovoPortalFrame implements IStringSerializable {
 	
-	BRICK("lovo_brick",4,4,1),
-	CHISELLED("lovo_brick_chiselled",4,4,1),
-	CRACKED("lovo_brick_cracked",4,4,1);
+	FRAME("lovo_portal_frame",6,8,3),
+	FRAMEEMPTY("lovo_portal_frame_empty",6,8,3),
+	FRAMECRYSTAL("lovo_portal_frame_crystal",6,8,3);
 	
 	private String st;
 	public final float hardness,resistance,harvestlevel;
 	
-	private EnumLovoBrick(String st,float hardness,float resistance,float harvestlevel) {
+	private EnumLovoPortalFrame(String st,float hardness,float resistance,float harvestlevel) {
 		this.st = st;
 		this.hardness = hardness;
 		this.resistance = resistance;
@@ -25,8 +25,8 @@ public enum EnumLovoBrick implements IStringSerializable {
 	
 	public int getMeta(){
 		int i = 0;
-		for(EnumLovoBrick brick : EnumLovoBrick.values()){
-			if(brick.getName().equals(this.getName())){
+		for(EnumLovoPortalFrame portalframe : EnumLovoPortalFrame.values()){
+			if(portalframe.getName().equals(this.getName())){
 				return i;
 			}
 			i++;

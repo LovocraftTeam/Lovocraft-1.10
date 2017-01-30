@@ -2,7 +2,7 @@ package de.alles_minecraft.lovocraft.enumtypes;
 
 import net.minecraft.util.IStringSerializable;
 
-public enum EnumLovoOres implements IStringSerializable {
+public enum EnumLovoOre implements IStringSerializable {
 	
 	COAL("lovo_coal",4,5,0,2),
 	DIAMOND("lovo_diamond",4,5,0,3),
@@ -17,7 +17,7 @@ public enum EnumLovoOres implements IStringSerializable {
 	private String st;
 	public final float hardness,resistance,light,harvestlevel;
 	
-	private EnumLovoOres(String st,float hardness,float resistance,float light,float harvestlevel) {
+	private EnumLovoOre(String st,float hardness,float resistance,float light,float harvestlevel) {
 		this.st = st;
 		this.hardness = hardness;
 		this.light = light;
@@ -32,7 +32,7 @@ public enum EnumLovoOres implements IStringSerializable {
 	
 	public int getMeta(){
 		int i = 0;
-		for(EnumLovoOres ore : EnumLovoOres.values()){
+		for(EnumLovoOre ore : EnumLovoOre.values()){
 			if(ore.getName().equals(this.getName())){
 				return i;
 			}

@@ -2,7 +2,7 @@ package de.alles_minecraft.lovocraft.blocks;
 
 import java.util.List;
 
-import de.alles_minecraft.lovocraft.enumtypes.EnumLovoOres;
+import de.alles_minecraft.lovocraft.enumtypes.EnumLovoBrick;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -17,39 +17,37 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
 
-public class BlockOres extends BaseBlock{
 
-	public static final PropertyEnum<EnumLovoOres> PROPERTY = PropertyEnum.create("lovo_ore_enum", EnumLovoOres.class);
+
+public class BlockLovoBrick extends BaseBlock{
+
+	public static final PropertyEnum<EnumLovoBrick> PROPERTY = PropertyEnum.create("lovo_brick_enum", EnumLovoBrick.class);
 	
-	public BlockOres() {
+	public BlockLovoBrick() {
 		super(Material.ROCK);	
-		this.setUnlocalizedName("lovo_ores");
+		this.setUnlocalizedName("lovo_brick");
 		this.setSoundType(SoundType.STONE);
 	}
 
 	@Override
 	public int getMetaFromState(IBlockState state) {
-		return state.getValue(BlockOres.PROPERTY).getMeta();
+		return state.getValue(BlockLovoBrick.PROPERTY).getMeta();
 	}
 	
 	@Override
 	public float getBlockHardness(IBlockState state, World worldIn, BlockPos pos) {
-		return (int) state.getValue(BlockOres.PROPERTY).hardness;
+		return (int) state.getValue(BlockLovoBrick.PROPERTY).hardness;
 	}
 	
 	@Override
 	public float getExplosionResistance(World world, BlockPos pos, Entity exploder, Explosion explosion) {
-		return (int) world.getBlockState(pos).getValue(BlockOres.PROPERTY).resistance;
+		return (int) world.getBlockState(pos).getValue(BlockLovoBrick.PROPERTY).resistance;
 	}
 	
-	@Override
-	public int getLightValue(IBlockState state) {
-		return (int) state.getValue(BlockOres.PROPERTY).light;
-	}
 	@Override
 	public int getHarvestLevel(IBlockState state) {
 	
-		return (int) state.getValue(BlockOres.PROPERTY).harvestlevel;
+		return (int) state.getValue(BlockLovoBrick.PROPERTY).harvestlevel;
 	}
 	
 	@Override
@@ -59,7 +57,7 @@ public class BlockOres extends BaseBlock{
 	
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
-		return this.getDefaultState().withProperty(BlockOres.PROPERTY, EnumLovoOres.values()[meta]);
+		return this.getDefaultState().withProperty(BlockLovoBrick.PROPERTY, EnumLovoBrick.values()[meta]);
 	}
 	
 	@Override
@@ -69,14 +67,14 @@ public class BlockOres extends BaseBlock{
 				
 	@Override
 	public void getSubBlocks(Item itemIn, CreativeTabs tab, List<ItemStack> list) {
-		for(EnumLovoOres ore : EnumLovoOres.values()){
-			list.add(new ItemStack(this,1,ore.getMeta()));
+		for(EnumLovoBrick brick : EnumLovoBrick.values()){
+			list.add(new ItemStack(this,1,brick.getMeta()));
 		}
 	}
 	
 	@Override
 	protected BlockStateContainer createBlockState() {
-		return new BlockStateContainer(this, new IProperty[] {BlockOres.PROPERTY});
+		return new BlockStateContainer(this, new IProperty[] {BlockLovoBrick.PROPERTY});
 	}
 	
 }

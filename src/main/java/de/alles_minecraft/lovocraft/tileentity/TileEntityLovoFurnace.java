@@ -9,7 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 
-public class TileEntityLovoFurnance extends TileEntity implements ISidedInventory, INetworkChooseButttonProvider{
+public class TileEntityLovoFurnace extends TileEntity implements ISidedInventory, INetworkChooseButttonProvider{
 	
 	private ItemStack[] stacks = new ItemStack[29];
 	private boolean state;

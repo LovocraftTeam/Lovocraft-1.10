@@ -9,13 +9,14 @@ public class ClientProxy extends CommonProxy{
 	@Override
 	public void registerModels() {
 		this.ENTRY = new RenderRegistery(Lovocraft.MODID);
-		this.ENTRY.register(Lovocraft.INSTANCE.lblocks.blockore);
-		this.ENTRY.register(Lovocraft.INSTANCE.lblocks.blockbrick);
+		this.ENTRY.register(Lovocraft.INSTANCE.lblocks.blocklovoore);
+		this.ENTRY.register(Lovocraft.INSTANCE.lblocks.blocklovobrick);
+		this.ENTRY.register(Lovocraft.INSTANCE.lblocks.blocklovoportalframe);
 		this.ENTRY.register(Lovocraft.INSTANCE.lblocks.blocklovostone);
 		this.ENTRY.register(Lovocraft.INSTANCE.lblocks.blocklovocobblestone);
 		this.ENTRY.register(Lovocraft.INSTANCE.lblocks.blocklovotnt);
 		this.ENTRY.register(Lovocraft.INSTANCE.lblocks.blocklovopillar);
-		this.ENTRY.register(Lovocraft.INSTANCE.lblocks.blocklovofurnance);
+		this.ENTRY.register(Lovocraft.INSTANCE.lblocks.blocklovofurnace);
 		
 	}	
 	
