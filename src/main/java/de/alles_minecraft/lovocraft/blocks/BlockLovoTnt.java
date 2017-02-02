@@ -38,7 +38,7 @@ public class BlockLovoTnt extends BaseBlock {
 		super(Material.TNT);
 		this.setSoundType(SoundType.PLANT);
 		this.setUnlocalizedName("lovo_tnt");
-     	this.setHardness(0.0F);
+     	this.setHardness(0.2F);
 		}
 	
 	   public boolean isOpaqueCube(IBlockState state)
