@@ -32,21 +32,21 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockLovoPillar extends BaseBlock {
+public class BlockLovoTable extends BaseBlock {
 	
-	protected static final AxisAlignedBB LOVO_PILLAR_AABB = new AxisAlignedBB(0.19D, 0.0D, 0.19D, 0.81D, 0.94D, 0.81D);
+	protected static final AxisAlignedBB LOVO_TABLE_AABB = new AxisAlignedBB(0.19D, 0.0D, 0.19D, 0.81D, 0.94D, 0.81D);
 	
 	
-	public BlockLovoPillar() {
+	public BlockLovoTable() {
 		super(Material.ROCK);
 		this.setSoundType(SoundType.STONE);
-		this.setUnlocalizedName("lovo_pillar");
+		this.setUnlocalizedName("lovo_table");
      	this.setHardness(4F);
 		this.setResistance(12.0F);
 		}
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
 	{
-	    return LOVO_PILLAR_AABB;
+	    return LOVO_TABLE_AABB;
 	}
 	
 	@Override
