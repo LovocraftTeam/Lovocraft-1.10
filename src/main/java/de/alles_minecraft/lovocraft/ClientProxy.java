@@ -1,6 +1,6 @@
 package de.alles_minecraft.lovocraft;
 
-import io.github.mc_umod.registerys.RenderRegistery;
+import io.github.mc_umod.registrys.RenderRegistery;
 
 public class ClientProxy extends CommonProxy{
 	

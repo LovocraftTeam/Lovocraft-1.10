@@ -11,7 +11,7 @@ import de.alles_minecraft.lovocraft.blocks.BlockLovoOre;
 import de.alles_minecraft.lovocraft.blocks.items.ItemBlockBrick;
 import de.alles_minecraft.lovocraft.blocks.items.ItemBlockLovoPortalFrame;
 import de.alles_minecraft.lovocraft.blocks.items.ItemBlockOre;
-import io.github.mc_umod.registerys.BlockRegistery;
+import io.github.mc_umod.registrys.BlockRegistery;
 import net.minecraft.block.Block;
 
 public class LBlocks {

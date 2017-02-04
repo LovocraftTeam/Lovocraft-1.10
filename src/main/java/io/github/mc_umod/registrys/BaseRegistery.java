@@ -1,4 +1,4 @@
-package io.github.mc_umod.registerys;
+package io.github.mc_umod.registrys;
 
 /**
  * Base Class for all Register Classes
