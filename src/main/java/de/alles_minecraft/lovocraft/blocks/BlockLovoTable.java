@@ -53,7 +53,7 @@ public class BlockLovoTable extends BaseBlock {
 	public String getHarvestTool(IBlockState state) {
 		return "pickaxe";
 	}
-	
+
 	@Override
 	public int getHarvestLevel(IBlockState state) {
 		return 1;

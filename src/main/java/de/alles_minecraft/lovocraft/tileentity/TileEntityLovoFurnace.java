@@ -2,14 +2,14 @@ package de.alles_minecraft.lovocraft.tileentity;
 
 import com.sun.org.apache.bcel.internal.generic.IINC;
 
-import de.alles_minecraft.lovocraft.network.INetworkChooseButttonProvider;
+import de.alles_minecraft.lovocraft.network.INetworkChooseButtonProvider;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 
-public class TileEntityLovoFurnace extends TileEntity implements ISidedInventory, INetworkChooseButttonProvider{
+public class TileEntityLovoFurnace extends TileEntity implements ISidedInventory, INetworkChooseButtonProvider{
 	
 	private ItemStack[] stacks = new ItemStack[29];
 	private boolean state;

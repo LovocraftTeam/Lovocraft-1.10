@@ -33,7 +33,7 @@ public class GuiLovoFurnace extends GuiContainer implements INetworkChooseButton
 
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {
-		this.mc.getTextureManager().bindTexture(new ResourceLocation(Lovocraft.MODID,"textures\\gui\\lovofurnace_gui.png"));
+		this.mc.getTextureManager().bindTexture(new ResourceLocation(Lovocraft.MODID,"textures\\gui\\lovo_furnace_container.png"));
 		Gui.drawModalRectWithCustomSizedTexture(this.guiLeft, this.guiTop, 0, 0, 257, 257, 257, 257);
 	}
 

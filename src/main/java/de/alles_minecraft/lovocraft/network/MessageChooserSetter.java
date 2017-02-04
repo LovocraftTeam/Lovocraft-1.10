@@ -25,8 +25,8 @@ public class MessageChooserSetter implements IMessage, IMessageHandler<MessageCh
 	@Override
 	public IMessage onMessage(MessageChooserSetter message, MessageContext ctx) {
 		TileEntity tile = ctx.getServerHandler().playerEntity.worldObj.getTileEntity(message.pos);
-		if(tile != null && tile instanceof INetworkChooseButttonProvider){
-			INetworkChooseButttonProvider inv = (INetworkChooseButttonProvider) tile;
+		if(tile != null && tile instanceof INetworkChooseButtonProvider){
+			INetworkChooseButtonProvider inv = (INetworkChooseButtonProvider) tile;
 			inv.setValue(message.id,message.state);
 		}
 		return null;
