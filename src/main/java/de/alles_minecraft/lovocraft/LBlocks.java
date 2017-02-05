@@ -10,6 +10,7 @@ import de.alles_minecraft.lovocraft.blocks.BlockLovoTnt;
 import de.alles_minecraft.lovocraft.blocks.BlockLovoOre;
 import de.alles_minecraft.lovocraft.blocks.items.ItemBlockBrick;
 import de.alles_minecraft.lovocraft.blocks.items.ItemBlockLovoPortalFrame;
+import de.alles_minecraft.lovocraft.blocks.items.ItemBlockLovoTabel;
 import de.alles_minecraft.lovocraft.blocks.items.ItemBlockOre;
 import io.github.mc_umod.registrys.BlockRegistery;
 import net.minecraft.block.Block;
@@ -38,6 +39,7 @@ public class LBlocks {
 		this.blocklovotnt = new BlockLovoTnt();
 		this.blocklovotable = new BlockLovoTable();
 		this.blocklovofurnace = new BlockLovoFurnace();
+		
 		this.register();
 	}
 
@@ -45,11 +47,12 @@ public class LBlocks {
 		this.register.register(this.blocklovoore,ItemBlockOre.class);
 		this.register.register(this.blocklovobrick,ItemBlockBrick.class);
 		this.register.register(this.blocklovoportalframe,ItemBlockLovoPortalFrame.class);
-		this.register.register(blocklovostone);
-		this.register.register(blocklovocobblestone);
-		this.register.register(blocklovotnt);
-		this.register.register(blocklovotable);
-		this.register.register(blocklovofurnace);
+		this.register.register(this.blocklovotable,ItemBlockLovoTabel.class);
+
+		this.register.register(this.blocklovostone);
+		this.register.register(this.blocklovocobblestone);
+		this.register.register(this.blocklovotnt);
+		this.register.register(this.blocklovofurnace);
 	}
 	
 }
