@@ -13,6 +13,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
@@ -75,6 +76,29 @@ public class BlockLovoPortalFrame extends BaseBlock{
 	@Override
 	protected BlockStateContainer createBlockState() {
 		return new BlockStateContainer(this, new IProperty[] {BlockLovoPortalFrame.PROPERTY});
+	}
+	
+	@Override
+	public boolean isOpaqueCube(IBlockState state) {
+		if(state.getValue(PROPERTY).equals(EnumLovoPortalFrame.FRAMEEMPTY))return false;
+		return true;
+	}
+	
+	@Override
+	public boolean isFullBlock(IBlockState s) {
+		if(s.getValue(PROPERTY).equals(EnumLovoPortalFrame.FRAMEEMPTY))return false;
+		return true;
+	}
+	
+	@Override
+	public boolean isFullCube(IBlockState s) {
+		if(s.getValue(PROPERTY).equals(EnumLovoPortalFrame.FRAMEEMPTY))return false;
+		return true;
+	}
+	
+	@Override
+	public BlockRenderLayer getBlockLayer() {
+		return BlockRenderLayer.CUTOUT_MIPPED;
 	}
 	
 }

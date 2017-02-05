@@ -50,6 +50,15 @@ public class BlockLovoTable extends BaseBlock {
 	}
 	
 	@Override
+	public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn) {
+		if(!worldIn.isSideSolid(pos.down(), EnumFacing.UP, false)){
+			this.breakBlock(worldIn, pos, state);
+			this.dropBlockAsItem(worldIn, pos, state, 0);
+			worldIn.setBlockToAir(pos);
+		}
+	}
+	
+	@Override
 	public String getHarvestTool(IBlockState state) {
 		return "pickaxe";
 	}
