@@ -1,6 +1,6 @@
 package de.alles_minecraft.lovocraft.network;
 
-public interface INetworkChooseButttonProvider {
+public interface INetworkChooseButtonProvider {
 
 	public boolean getValue(int id);
 	

@@ -22,15 +22,7 @@ public class ContainerLovoFurnace extends Container{
                 this.addSlotToContainer(new Slot(tile, j + i * 3 + 4, 53 + j * 18, 17 + i * 18));
             }
         }
-		
-		for (int i = 0; i < 4; ++i)
-        {
-            for (int j = 0; j < 4; ++j)
-            {
-                this.addSlotToContainer(new Slot(tile, j + i * 4 + 13, 178 + j * 18, 9 + i * 18));
-            }
-        }
-		
+			
 		for (int i = 0; i < 3; ++i)
         {
             for (int j = 0; j < 9; ++j)

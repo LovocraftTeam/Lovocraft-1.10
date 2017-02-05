@@ -38,8 +38,8 @@ public class MessageRequest implements IMessage,IMessageHandler<MessageRequest, 
 	@Override
 	public MessageCallback onMessage(MessageRequest message, MessageContext ctx) {
 		TileEntity tile = ctx.getServerHandler().playerEntity.worldObj.getTileEntity(message.pos);
-		if(tile != null && tile instanceof INetworkChooseButttonProvider){
-			INetworkChooseButttonProvider inv = (INetworkChooseButttonProvider) tile;
+		if(tile != null && tile instanceof INetworkChooseButtonProvider){
+			INetworkChooseButtonProvider inv = (INetworkChooseButtonProvider) tile;
 			return new MessageCallback(message.id, inv.getValue(message.id));
 		}
 		return null;
