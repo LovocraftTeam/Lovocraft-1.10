@@ -36,6 +36,8 @@ public class GuiChooseButton extends Gui {
 		GlStateManager.translate(this.x, this.y, 0);
 		{
 			this.tex.bindTexture(new ResourceLocation(Lovocraft.MODID,"textures\\gui\\frame.png"));
+			GlStateManager.enableAlpha();
+			GlStateManager.disableLighting();
 			GlStateManager.color(1 - animation, animation,0,0.5F);
 			drawScaledCustomSizeModalRect(0, 0, 0, 0, 72, 36, 72/3, 36/3, 72, 36);
 			GlStateManager.color(1, 1, 1);

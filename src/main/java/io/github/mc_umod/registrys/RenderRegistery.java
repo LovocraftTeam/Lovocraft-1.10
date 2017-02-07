@@ -50,7 +50,7 @@ public class RenderRegistery extends BaseRegistery{
 	
 	/**
 	 * Registers a Item and all its subtypes<br>
-	 * <strong>Unlocalized Name has to be set</strong>
+	 * <strong>Unlocalized Name has to be set!</strong>
 	 * 
 	 * @param item
 	 */

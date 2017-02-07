@@ -16,7 +16,7 @@ public class BlockRegistery extends BaseRegistery{
 	
 	/**
 	 * Registers a Block<br>
-	 * <strong>Unlocalized Name has to be set</strong>
+	 * <strong>Unlocalized Name has to be set!</strong>
 	 * 
 	 * @param block
 	 */
@@ -26,7 +26,7 @@ public class BlockRegistery extends BaseRegistery{
 
 	/**
 	 * Registers a Block with an ItemBlock<br>
-	 * <strong>Unlocalized Name has to be set</strong>
+	 * <strong>Unlocalized Name has to be set!</strong>
 	 * 
 	 * @param block
 	 * @param itemBlock

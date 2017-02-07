@@ -11,7 +11,7 @@ import net.minecraft.util.EnumFacing;
 
 public class TileEntityLovoFurnace extends TileEntity implements ISidedInventory, INetworkChooseButtonProvider{
 	
-	private ItemStack[] stacks = new ItemStack[29];
+	private ItemStack[] stacks = new ItemStack[13];
 	private boolean state;
 
 	@Override

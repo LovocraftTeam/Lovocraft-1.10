@@ -4,6 +4,7 @@ import org.apache.logging.log4j.Logger;
 
 import de.alles_minecraft.lovocraft.network.Packet;
 import de.alles_minecraft.lovocraft.tileentity.TileEntityLovoFurnace;
+import de.alles_minecraft.lovocraft.tileentity.TileEntityTable;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -58,6 +59,7 @@ public class Lovocraft {
 		PROXY_INSTANCE.registerModels();
 		
 		TileEntity.addMapping(TileEntityLovoFurnace.class, "LovoFurnace");
+		TileEntity.addMapping(TileEntityTable.class, "LovoTabel");
 	}
 	
 	@EventHandler
