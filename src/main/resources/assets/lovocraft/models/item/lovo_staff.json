@@ -1,8 +1,7 @@
 {
 "__comment": "Designed by Tutadventures with BDcraft Cubik PRO 0.96 Beta - http://bdcraft.net",
 "textures": {
-    "particle": "lovocraft:items/lovostaff",
-    "texture": "lovocraft:items/lovostaff"
+      "texture": "lovocraft:items/lovo_staff"
 },
 "elements": [ 
 {

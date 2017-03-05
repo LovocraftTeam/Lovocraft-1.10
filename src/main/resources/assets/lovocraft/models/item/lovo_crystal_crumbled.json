@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "lovocraft:items/lovocrystalcrumbled"
+        "layer0": "lovocraft:items/lovo_crystal_crumbled"
     }
 }

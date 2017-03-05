@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "lovocraft:items/lovofurnaceupgrade"
+        "layer0": "lovocraft:items/lovo_iron_ingot"
     }
 }

@@ -18,6 +18,14 @@ public class ClientProxy extends CommonProxy{
 		this.ENTRY.register(Lovocraft.INSTANCE.lblocks.blocklovotable);
 		this.ENTRY.register(Lovocraft.INSTANCE.lblocks.blocklovofurnace);
 		
+		this.ENTRY.register(Lovocraft.INSTANCE.litems.lovocrystal);
+		this.ENTRY.register(Lovocraft.INSTANCE.litems.lovocrystalcrumbled);
+		this.ENTRY.register(Lovocraft.INSTANCE.litems.lovoiron);
+		this.ENTRY.register(Lovocraft.INSTANCE.litems.lovostring);
+		this.ENTRY.register(Lovocraft.INSTANCE.litems.lovostick);
+		this.ENTRY.register(Lovocraft.INSTANCE.litems.lovofurnaceupgrade);
+		this.ENTRY.register(Lovocraft.INSTANCE.litems.lovobow);
+		this.ENTRY.register(Lovocraft.INSTANCE.litems.lovostaff);
 	}	
 	
 }

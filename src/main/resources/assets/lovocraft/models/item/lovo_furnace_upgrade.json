@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "lovocraft:items/lovoiron"
+        "layer0": "lovocraft:items/lovo_furnace_upgrade"
     }
 }

@@ -24,6 +24,6 @@ public class ItemRegistery extends BaseRegistery{
 	public void register(Item itemblock){
 		String name = this.formate(itemblock.getUnlocalizedName());
 		itemblock.setRegistryName(name);
-		GameRegistry.register(itemblock.setUnlocalizedName(itemblock.getUnlocalizedName()).setRegistryName(name));
+		GameRegistry.register(itemblock);
 	}
 }

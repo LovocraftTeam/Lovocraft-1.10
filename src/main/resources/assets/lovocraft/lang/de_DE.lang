@@ -22,18 +22,20 @@ tile.lovo_tnt.name=Lovo TNT
 tile.lovo_table.name=Lovo Tisch
 tile.lovo_furnace.name=Lovo Ofen
 
+item.lovo_crystal.name=Lovo Kristall
+item.lovo_crystal_crumbled.name=Zerbröselter Lovo Kristall
+item.lovo_iron_ingot.name=Lovoeisenbarren
+item.lovo_string.name=Lovo Faden
+item.lovo_stick.name=Lovo Stock
+item.lovo_furnace_upgrade.name=Lovo Ofen Verbesserung
+item.lovo_bow_name=Lovo Bogen
+item.lovo_staff.name=Lovo Stab
 
 
 
-item.lovocrystal.name=Lovo Kristall
-item.lovocrystal_crumbled.name=Zerbröselter Lovo Kristall
-item.lovoiron.name=Lovoeisenbarren
-item.lovostick.name=Lovo Stock
-item.lovostring.name=Lovo Faden
-item.lovostaff.name=Lovo Stab
 item.livingfire.name=Lebendes Feuer
 item.sigilofthedarklord.name=Siegel des Dunklen Lords
-item.lovofurnaceupgrade.name=Lovo Ofen Verbesserung
+
 item.lovosword.name=Lovo Schwert
 item.lovoaxe.name=Lovo Axt
 item.lovopickaxe.name=Lovo Spitzhacke
