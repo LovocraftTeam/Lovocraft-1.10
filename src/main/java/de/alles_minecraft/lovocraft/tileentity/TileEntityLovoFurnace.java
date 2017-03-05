@@ -1,7 +1,5 @@
 package de.alles_minecraft.lovocraft.tileentity;
 
-import com.sun.org.apache.bcel.internal.generic.IINC;
-
 import de.alles_minecraft.lovocraft.network.INetworkChooseButtonProvider;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.ISidedInventory;

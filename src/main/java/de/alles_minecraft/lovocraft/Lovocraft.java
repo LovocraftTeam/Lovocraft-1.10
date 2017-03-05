@@ -3,12 +3,14 @@ package de.alles_minecraft.lovocraft;
 import org.apache.logging.log4j.Logger;
 
 import de.alles_minecraft.lovocraft.network.Packet;
+import de.alles_minecraft.lovocraft.render.RenderSys;
 import de.alles_minecraft.lovocraft.tileentity.TileEntityLovoFurnace;
 import de.alles_minecraft.lovocraft.tileentity.TileEntityTable;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -55,6 +57,7 @@ public class Lovocraft {
 		this.lblocks = new LBlocks();
 		
 		NetworkRegistry.INSTANCE.registerGuiHandler(MODID, new GuiHandler());
+		MinecraftForge.EVENT_BUS.register(new RenderSys());
 		
 		PROXY_INSTANCE.registerModels();
 		

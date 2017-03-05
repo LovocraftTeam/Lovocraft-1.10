@@ -5,6 +5,8 @@ import java.util.Random;
 
 import de.alles_minecraft.lovocraft.LBlocks;
 import de.alles_minecraft.lovocraft.Lovocraft;
+import de.alles_minecraft.lovocraft.events.UnregisterRenderEvent;
+import de.alles_minecraft.lovocraft.render.RenderTabelSpc;
 import de.alles_minecraft.lovocraft.tileentity.TileEntityLovoFurnace;
 import de.alles_minecraft.lovocraft.tileentity.TileEntityTable;
 import net.minecraft.block.Block;
@@ -35,6 +37,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.common.MinecraftForge;
 
 public class BlockLovoTable extends BaseBlock implements ITileEntityProvider{
 	
@@ -67,8 +70,12 @@ public class BlockLovoTable extends BaseBlock implements ITileEntityProvider{
 			EnumHand hand, ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ) {
 		if(side.equals(EnumFacing.UP)){
 			((TileEntityTable)worldIn.getTileEntity(pos)).addItem(heldItem);
-			playerIn.inventory.setInventorySlotContents(playerIn.inventory.currentItem, null);
-			playerIn.inventory.dropAllItems();
+			if(playerIn.inventory.getCurrentItem() != null){
+				playerIn.inventory.getCurrentItem().stackSize--;
+				if(playerIn.inventory.getCurrentItem().stackSize <= 0){
+					playerIn.inventory.setInventorySlotContents(playerIn.inventory.currentItem, null);
+				}
+			}
 			return true;
 		}
 		return false;
@@ -82,6 +89,11 @@ public class BlockLovoTable extends BaseBlock implements ITileEntityProvider{
 	@Override
 	public int getHarvestLevel(IBlockState state) {
 		return 1;
+	}
+	
+	@Override
+	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
+		MinecraftForge.EVENT_BUS.post(new UnregisterRenderEvent(worldIn, pos, RenderTabelSpc.class));
 	}
 	
 	@Override

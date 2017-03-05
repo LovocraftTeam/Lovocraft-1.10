@@ -1,5 +1,8 @@
 package de.alles_minecraft.lovocraft.tileentity;
 
+import de.alles_minecraft.lovocraft.events.RegisterRenderEvent;
+import de.alles_minecraft.lovocraft.events.UnregisterRenderEvent;
+import de.alles_minecraft.lovocraft.render.RenderTabelSpc;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
@@ -9,6 +12,7 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
+import net.minecraftforge.common.MinecraftForge;
 
 public class TileEntityTable extends TileEntity{
 
@@ -17,37 +21,65 @@ public class TileEntityTable extends TileEntity{
 	
 	@Override
 	public NBTTagCompound writeToNBT(NBTTagCompound compound) {
-		compound.setTag("0", stack1.writeToNBT(new NBTTagCompound()));
-		compound.setTag("1", stack2.writeToNBT(new NBTTagCompound()));
+		if(this.stack1 != null)compound.setTag("0", this.stack1.writeToNBT(new NBTTagCompound()));
+		if(this.stack2 != null)compound.setTag("1", this.stack2.writeToNBT(new NBTTagCompound()));
 		return super.writeToNBT(compound);
 	}
 	
 	@Override
 	public void readFromNBT(NBTTagCompound compound) {
 		super.readFromNBT(compound);
-		stack1 = ItemStack.loadItemStackFromNBT(compound.getCompoundTag("0"));
-		stack2 = ItemStack.loadItemStackFromNBT(compound.getCompoundTag("1"));
+		if(compound.hasKey("0"))this.stack1 = ItemStack.loadItemStackFromNBT(compound.getCompoundTag("0"));
+		if(compound.hasKey("1"))this.stack2 = ItemStack.loadItemStackFromNBT(compound.getCompoundTag("1"));
 	}
 	
 	public void addItem(ItemStack s){
-		ItemStack st = stack1;
-		ItemStack impl_st = stack2;
 		if(s == null){
-			stack1 = null;
-			stack2 = null;
-			Block.spawnAsEntity(worldObj, pos, st);
-			Block.spawnAsEntity(worldObj, pos, impl_st);
+			if(this.stack1 != null){
+				Block.spawnAsEntity(this.worldObj, this.pos, this.stack1);
+				this.stack1 = null;
+			}
+			if(this.stack2 != null){
+				Block.spawnAsEntity(this.worldObj, this.pos, this.stack2);
+				this.stack2 = null;
+			}
+			return;
 		}
-		if(st == null){
-			stack1 = s;
+		if(this.stack1 != null && this.stack1.isItemEqual(s)){
+			if(this.stack1.stackSize >= 64){
+				Block.spawnAsEntity(this.worldObj, this.pos, new ItemStack(s.getItem(),1,s.getMetadata()));
+			}else{
+				this.stack1.stackSize++;
+			}
+			return;
 		}
-		if(impl_st == null){
-			stack2 = s;
-		}else{
-			stack1 = impl_st;
-			stack2 = s;
-			Block.spawnAsEntity(worldObj, pos, st);
+		if(this.stack2 != null && this.stack2.isItemEqual(s)){
+			if(this.stack2.stackSize >= 64){
+				Block.spawnAsEntity(this.worldObj, this.pos, new ItemStack(s.getItem(),1,s.getMetadata()));
+			}else{
+				this.stack2.stackSize++;
+			}
+			return;
 		}
+		if(this.stack1 == null){
+			this.stack1 = new ItemStack(s.getItem(),1,s.getMetadata());
+			return;
+		}
+		if(this.stack2 == null){
+			this.stack2 = new ItemStack(s.getItem(),1,s.getMetadata());
+			return;
+		}
+		Block.spawnAsEntity(this.worldObj, this.pos, new ItemStack(s.getItem(),1,s.getMetadata()));
+	}
+	
+	@Override
+	public void onChunkUnload() {
+		MinecraftForge.EVENT_BUS.post(new UnregisterRenderEvent(worldObj, pos, RenderTabelSpc.class));
+	}
+	
+	@Override
+	public void onLoad() {
+		MinecraftForge.EVENT_BUS.post(new RegisterRenderEvent(worldObj, pos, RenderTabelSpc.class));
 	}
 	
 	@Override
