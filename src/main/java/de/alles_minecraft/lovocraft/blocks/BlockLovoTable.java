@@ -17,6 +17,7 @@ import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -67,6 +68,7 @@ public class BlockLovoTable extends BaseBlock implements ITileEntityProvider{
 		if(side.equals(EnumFacing.UP)){
 			((TileEntityTable)worldIn.getTileEntity(pos)).addItem(heldItem);
 			playerIn.inventory.setInventorySlotContents(playerIn.inventory.currentItem, null);
+			playerIn.inventory.dropAllItems();
 			return true;
 		}
 		return false;
